@@ -1,0 +1,213 @@
+{
+  "videos": [
+    {
+      "id": "6ae48927-028b-4bca-b4f3-86f7f55e3661",
+      "topic": "Why The Eiffel Tower Grows Taller In Summer",
+      "category": "science",
+      "targetDurationSeconds": 20,
+      "voiceId": "Kore",
+      "visualMode": "stock_auto",
+      "status": "failed",
+      "currentStage": "Failed at storage",
+      "progressPercent": 95,
+      "script": {
+        "title": "Why The Eiffel Tower Grows Taller In Summer",
+        "researchSummary": "The Eiffel Tower is constructed from over 7,000 tons of puddle iron, a type of wrought iron highly sensitive to temperature changes. During hot summer days in Paris, thermal expansion causes the iron atoms to vibrate more vigorously and move further apart, increasing the tower's height by up to 15 centimeters (about 6 inches).",
+        "keyFacts": [
+          "The Eiffel Tower is made of puddle iron, a form of wrought iron.",
+          "Thermal expansion causes metal particles to spread apart when heated.",
+          "In peak summer heat, the tower can grow up to 15 centimeters or 6 inches taller.",
+          "Uneven sun exposure also causes the top of the tower to lean slightly away from the sun."
+        ],
+        "hook": "Did you know the Eiffel Tower grows taller?",
+        "mainContent": "Built from puddle iron, the massive monument reacts strongly whenever summer heat hits Paris. Thermal expansion makes its iron particles vibrate faster and spread apart, pushing it upward.",
+        "ending": "On hot days, it actually stretches up to six inches taller.",
+        "fullNarration": "Did you know the Eiffel Tower grows taller? Built from puddle iron, the massive monument reacts strongly whenever summer heat hits Paris. Thermal expansion makes its iron particles vibrate faster and spread apart, pushing it upward. On hot days, it actually stretches up to six inches taller.",
+        "estimatedDurationSeconds": 24,
+        "musicMood": "curious upbeat documentary",
+        "scenes": [
+          {
+            "id": "34292649-6d8b-470a-9c95-d4380e6bd03e",
+            "sceneNumber": 1,
+            "durationSeconds": 4.44,
+            "narrationText": "Did you know the Eiffel Tower grows taller?",
+            "subtitleText": "The Eiffel Tower actually grows taller!",
+            "visualPrompt": "Vertical 9:16 cinematic low-angle shot looking up at the Eiffel Tower against a bright clear blue summer sky in Paris, golden sunlight glinting off the iron lattice, crisp photographic detail",
+            "stockKeywords": [
+              "Eiffel Tower",
+              "Paris summer",
+              "landmark"
+            ],
+            "transition": "zoom",
+            "soundEffectCue": "subtle riser",
+            "assetSource": "stock_image",
+            "audioLocalPath": "/app/applet/data/jobs/6ae48927-028b-4bca-b4f3-86f7f55e3661/narration_scene_1.wav",
+            "audioUrl": "/api/media/6ae48927-028b-4bca-b4f3-86f7f55e3661/narration_scene_1.wav",
+            "actualAudioDurationSeconds": 4.44,
+            "providerName": "Wikimedia Commons",
+            "attribution": "Stock Image (Public domain) · NASA Earth Observatory image by Michala Garrison",
+            "assetLocalPath": "/app/applet/data/jobs/6ae48927-028b-4bca-b4f3-86f7f55e3661/scene_1_wikimedia.jpg",
+            "assetUrl": "/api/media/6ae48927-028b-4bca-b4f3-86f7f55e3661/scene_1_wikimedia.jpg"
+          },
+          {
+            "id": "8e574bf0-6974-4083-a2ba-da9bb9848edc",
+            "sceneNumber": 2,
+            "durationSeconds": 6.76,
+            "narrationText": "Built from puddle iron, the massive monument reacts strongly whenever summer heat hits Paris.",
+            "subtitleText": "Puddle iron reacts to summer heat.",
+            "visualPrompt": "Vertical 9:16 close-up macro view of intricate riveted wrought iron beams of the Eiffel Tower glowing in warm afternoon sunlight, heat shimmer subtly visible in the air, shallow depth of field",
+            "stockKeywords": [
+              "iron structure",
+              "Eiffel Tower detail",
+              "summer heat"
+            ],
+            "transition": "cut",
+            "soundEffectCue": "low whoosh",
+            "assetSource": "stock_image",
+            "audioLocalPath": "/app/applet/data/jobs/6ae48927-028b-4bca-b4f3-86f7f55e3661/narration_scene_2.wav",
+            "audioUrl": "/api/media/6ae48927-028b-4bca-b4f3-86f7f55e3661/narration_scene_2.wav",
+            "actualAudioDurationSeconds": 6.76,
+            "providerName": "Wikimedia Commons",
+            "attribution": "Stock Image (CC BY-SA 3.0) · Pab.r67",
+            "assetLocalPath": "/app/applet/data/jobs/6ae48927-028b-4bca-b4f3-86f7f55e3661/scene_2_wikimedia.png",
+            "assetUrl": "/api/media/6ae48927-028b-4bca-b4f3-86f7f55e3661/scene_2_wikimedia.png"
+          },
+          {
+            "id": "0887cfff-e637-4a56-b3ef-437bf8cb118a",
+            "sceneNumber": 3,
+            "durationSeconds": 7.48,
+            "narrationText": "Thermal expansion makes its iron particles vibrate faster and spread apart, pushing it upward.",
+            "subtitleText": "Thermal expansion pushes the metal upward.",
+            "visualPrompt": "Vertical 9:16 clean scientific 3D visualization of glowing orange-red iron atoms vibrating and expanding apart inside a metallic lattice structure, dark background, educational documentary style",
+            "stockKeywords": [
+              "atoms vibrating",
+              "metal expansion",
+              "science animation"
+            ],
+            "transition": "crossfade",
+            "soundEffectCue": "soft metallic hum",
+            "assetSource": "stock_image",
+            "audioLocalPath": "/app/applet/data/jobs/6ae48927-028b-4bca-b4f3-86f7f55e3661/narration_scene_3.wav",
+            "audioUrl": "/api/media/6ae48927-028b-4bca-b4f3-86f7f55e3661/narration_scene_3.wav",
+            "actualAudioDurationSeconds": 7.48,
+            "providerName": "Wikimedia Commons",
+            "attribution": "Stock Image (No restrictions) · Internet Archive Book Images",
+            "assetLocalPath": "/app/applet/data/jobs/6ae48927-028b-4bca-b4f3-86f7f55e3661/scene_3_wikimedia.jpg",
+            "assetUrl": "/api/media/6ae48927-028b-4bca-b4f3-86f7f55e3661/scene_3_wikimedia.jpg"
+          },
+          {
+            "id": "b8e12987-8b41-408c-9e3f-554c43a47942",
+            "sceneNumber": 4,
+            "durationSeconds": 5.24,
+            "narrationText": "On hot days, it actually stretches up to six inches taller.",
+            "subtitleText": "Up to six inches taller in summer.",
+            "visualPrompt": "Vertical 9:16 wide shot of the Eiffel Tower towering over the Paris skyline at golden hour with a subtle glowing vertical measurement line beside the spire indicating upward growth",
+            "stockKeywords": [
+              "Paris skyline",
+              "Eiffel Tower sunset",
+              "tall monument"
+            ],
+            "transition": "cut",
+            "soundEffectCue": "soft chime",
+            "assetSource": "stock_image",
+            "audioLocalPath": "/app/applet/data/jobs/6ae48927-028b-4bca-b4f3-86f7f55e3661/narration_scene_4.wav",
+            "audioUrl": "/api/media/6ae48927-028b-4bca-b4f3-86f7f55e3661/narration_scene_4.wav",
+            "actualAudioDurationSeconds": 5.24,
+            "providerName": "Wikimedia Commons",
+            "attribution": "Stock Image (CC BY-SA 4.0) · Benh LIEU SONG",
+            "assetLocalPath": "/app/applet/data/jobs/6ae48927-028b-4bca-b4f3-86f7f55e3661/scene_4_wikimedia.jpg",
+            "assetUrl": "/api/media/6ae48927-028b-4bca-b4f3-86f7f55e3661/scene_4_wikimedia.jpg"
+          }
+        ]
+      },
+      "createdAt": "2026-11-15T06:54:44.805Z",
+      "updatedAt": "2026-11-15T07:01:51.432Z",
+      "source": "manual",
+      "output": {
+        "streamUrl": "/api/videos/6ae48927-028b-4bca-b4f3-86f7f55e3661/stream",
+        "downloadUrl": "/api/videos/6ae48927-028b-4bca-b4f3-86f7f55e3661/download",
+        "thumbnailUrl": "/api/videos/6ae48927-028b-4bca-b4f3-86f7f55e3661/thumbnail",
+        "fileSizeBytes": 7694849,
+        "durationSeconds": 23.9,
+        "resolution": "1080x1920",
+        "videoCodec": "h264",
+        "audioCodec": "aac",
+        "verifiedAt": "2026-11-15T07:01:34.519Z"
+      },
+      "error": {
+        "code": "RENDER_PIPELINE_ERROR",
+        "message": "The specified bucket does not exist.",
+        "retryable": true,
+        "stage": "storage",
+        "occurredAt": "2026-11-15T07:01:51.424Z"
+      }
+    }
+  ],
+  "topicHistory": [
+    {
+      "topic": "Why The Eiffel Tower Grows Taller In Summer",
+      "category": "science",
+      "createdAt": "2026-11-15T06:54:44.805Z"
+    },
+    {
+      "topic": "The Indonesian Volcano That Erupts Electric Blue Lava",
+      "category": "science",
+      "createdAt": "2026-11-15T06:54:37.547Z"
+    },
+    {
+      "topic": "Why A Teaspoon Of This Star Weighs A Billion Tons",
+      "category": "science",
+      "createdAt": "2026-11-15T06:54:37.547Z"
+    },
+    {
+      "topic": "The Shrimp That Punches So Fast Water Boils",
+      "category": "science",
+      "createdAt": "2026-11-15T06:54:37.547Z"
+    },
+    {
+      "topic": "The Frozen Smoke Solid That Stops A Blowtorch",
+      "category": "science",
+      "createdAt": "2026-11-15T06:54:37.547Z"
+    },
+    {
+      "topic": "Why You Cannot Actually Cry Tears In Zero Gravity",
+      "category": "science",
+      "createdAt": "2026-11-15T05:42:38.013Z"
+    },
+    {
+      "topic": "How A Brainless Slime Mold Redesigned Tokyo's Subway System",
+      "category": "science",
+      "createdAt": "2026-11-15T05:42:38.013Z"
+    },
+    {
+      "topic": "The Bulletproof Glass Tear That Explodes From A Single Scratch",
+      "category": "science",
+      "createdAt": "2026-11-15T05:42:38.013Z"
+    },
+    {
+      "topic": "The Toxic Underwater Lakes Hidden At The Bottom Of The Ocean",
+      "category": "science",
+      "createdAt": "2026-11-15T05:42:38.013Z"
+    }
+  ],
+  "automation": {
+    "enabled": false,
+    "videosPerDay": 2,
+    "scheduleTimesUtc": [
+      "09:00",
+      "21:00"
+    ],
+    "defaultCategory": "rotate",
+    "defaultDurationSeconds": 45,
+    "defaultVoiceId": "Kore",
+    "defaultVisualMode": "stock_auto",
+    "preventDuplicatesWindowDays": 30
+  },
+  "automationRuns": [],
+  "settings": {
+    "preferredVisualProvider": "stock_first",
+    "resolution": "1080x1920",
+    "fps": 30,
+    "subtitleStyle": "bold_centered"
+  }
+}

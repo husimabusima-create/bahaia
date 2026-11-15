@@ -1,0 +1,325 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "Authenticated user account profile isolated by UID.",
+      "type": "object",
+      "properties": {
+        "uid": {
+          "type": "string",
+          "description": "Firebase Auth UID",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "email": {
+          "type": "string",
+          "format": "email",
+          "maxLength": 254
+        },
+        "displayName": {
+          "type": "string",
+          "maxLength": 120
+        },
+        "photoURL": {
+          "type": "string",
+          "maxLength": 512
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["uid", "email", "createdAt", "updatedAt"]
+    },
+    "VideoJob": {
+      "title": "VideoJob",
+      "description": "User-owned vertical short-form video production job.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 8,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "ownerUid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "topic": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 240
+        },
+        "category": {
+          "type": "string",
+          "enum": ["educational", "history", "technology", "science", "mystery", "storytelling"]
+        },
+        "targetDurationSeconds": {
+          "type": "number"
+        },
+        "voiceId": {
+          "type": "string",
+          "enum": ["Kore", "Puck", "Charon", "Fenrir", "Zephyr"]
+        },
+        "visualMode": {
+          "type": "string",
+          "enum": ["stock_auto", "pexels", "pixabay", "wikimedia", "ai_image"]
+        },
+        "status": {
+          "type": "string",
+          "enum": ["draft", "script_ready", "queued", "processing", "completed", "failed"]
+        },
+        "currentStage": {
+          "type": "string",
+          "maxLength": 240
+        },
+        "progressPercent": {
+          "type": "number"
+        },
+        "source": {
+          "type": "string",
+          "enum": ["manual", "scheduled"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "id",
+        "ownerUid",
+        "topic",
+        "category",
+        "targetDurationSeconds",
+        "voiceId",
+        "visualMode",
+        "status",
+        "currentStage",
+        "progressPercent",
+        "source",
+        "createdAt",
+        "updatedAt"
+      ]
+    },
+    "TopicHistoryEntry": {
+      "title": "TopicHistoryEntry",
+      "description": "Recently suggested or used video topic scoped to user for deduplication.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "ownerUid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "topic": {
+          "type": "string",
+          "minLength": 3,
+          "maxLength": 240
+        },
+        "category": {
+          "type": "string",
+          "enum": ["educational", "history", "technology", "science", "mystery", "storytelling"]
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": ["id", "ownerUid", "topic", "category", "createdAt"]
+    },
+    "AppSettings": {
+      "title": "AppSettings",
+      "description": "Per-user video output and visual provider preferences.",
+      "type": "object",
+      "properties": {
+        "ownerUid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "preferredVisualProvider": {
+          "type": "string",
+          "enum": ["stock_first", "ai_image_first"]
+        },
+        "resolution": {
+          "type": "string",
+          "enum": ["1080x1920"]
+        },
+        "fps": {
+          "type": "number"
+        },
+        "subtitleStyle": {
+          "type": "string",
+          "enum": ["bold_centered", "minimal_bottom"]
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "ownerUid",
+        "preferredVisualProvider",
+        "resolution",
+        "fps",
+        "subtitleStyle",
+        "updatedAt"
+      ]
+    },
+    "AutomationConfig": {
+      "title": "AutomationConfig",
+      "description": "Per-user automated daily short-form video schedule configuration.",
+      "type": "object",
+      "properties": {
+        "ownerUid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "enabled": {
+          "type": "boolean"
+        },
+        "videosPerDay": {
+          "type": "number"
+        },
+        "scheduleTimesUtc": {
+          "type": "array"
+        },
+        "defaultCategory": {
+          "type": "string",
+          "enum": ["rotate", "educational", "history", "technology", "science", "mystery", "storytelling"]
+        },
+        "defaultDurationSeconds": {
+          "type": "number"
+        },
+        "defaultVoiceId": {
+          "type": "string",
+          "enum": ["Kore", "Puck", "Charon", "Fenrir", "Zephyr"]
+        },
+        "defaultVisualMode": {
+          "type": "string",
+          "enum": ["stock_auto", "pexels", "pixabay", "wikimedia", "ai_image"]
+        },
+        "preventDuplicatesWindowDays": {
+          "type": "number"
+        },
+        "updatedAt": {
+          "type": "string",
+          "format": "date-time"
+        }
+      },
+      "required": [
+        "ownerUid",
+        "enabled",
+        "videosPerDay",
+        "scheduleTimesUtc",
+        "defaultCategory",
+        "defaultDurationSeconds",
+        "defaultVoiceId",
+        "defaultVisualMode",
+        "preventDuplicatesWindowDays",
+        "updatedAt"
+      ]
+    },
+    "AutomationRunLog": {
+      "title": "AutomationRunLog",
+      "description": "Execution log for scheduled or manual user automation triggers.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "ownerUid": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "pattern": "^[a-zA-Z0-9_\\-]+$"
+        },
+        "slotKey": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 64
+        },
+        "triggeredAt": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["pending", "running", "completed", "failed", "skipped_duplicate"]
+        },
+        "videoId": {
+          "type": "string",
+          "maxLength": 128
+        },
+        "message": {
+          "type": "string",
+          "maxLength": 500
+        }
+      },
+      "required": ["id", "ownerUid", "slotKey", "triggeredAt", "status", "message"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": {
+        "$ref": "#/entities/UserProfile"
+      },
+      "description": "Private user account metadata isolated to the authenticated owner."
+    },
+    "/users/{userId}/videos/{videoId}": {
+      "schema": {
+        "$ref": "#/entities/VideoJob"
+      },
+      "description": "User-owned short-form video jobs, scripts, and MP4 output metadata."
+    },
+    "/users/{userId}/topicHistory/{entryId}": {
+      "schema": {
+        "$ref": "#/entities/TopicHistoryEntry"
+      },
+      "description": "User-scoped topic history used for deduplicating Gemini topic suggestions."
+    },
+    "/users/{userId}/settings/{settingId}": {
+      "schema": {
+        "$ref": "#/entities/AppSettings"
+      },
+      "description": "User-owned video rendering and visual strategy settings."
+    },
+    "/users/{userId}/automation/{configId}": {
+      "schema": {
+        "$ref": "#/entities/AutomationConfig"
+      },
+      "description": "User-owned daily automation schedule configuration."
+    },
+    "/users/{userId}/automationRuns/{runId}": {
+      "schema": {
+        "$ref": "#/entities/AutomationRunLog"
+      },
+      "description": "User-owned automation trigger execution history."
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "name": "ShortForge",
+  "description": "Automated AI short-form vertical video production studio powered by Gemini and FFmpeg.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
